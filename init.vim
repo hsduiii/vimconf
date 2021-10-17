@@ -60,7 +60,7 @@ map <C-n> :NERDTreeToggle<CR>
 "coc.nvim config
 
 "Install dependecies
-let g:coc_global_extensions = ['coc-eslint', 'coc-tsserver', 'coc-elixir']
+let g:coc_global_extensions = ['coc-eslint', 'coc-tsserver', 'coc-elixir', 'coc-prettier']
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
@@ -197,7 +197,7 @@ nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
+command! -nargs=0 Format :CocCommand prettier.formatFile
 
 " Add `:Fold` command to fold current buffer.
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
