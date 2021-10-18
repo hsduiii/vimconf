@@ -56,6 +56,8 @@ let g:airline_theme='onedark'	"el tema de airline
 "control y -n la tecla n lo que indica que realizará la siguiente funcion de excribir el comando NERDTreeToggle y CR significa ENTER.
 map <C-n> :NERDTreeToggle<CR>
 
+" Start NERDTree and put the cursor back in the other window.
+autocmd VimEnter * NERDTree | wincmd p
 
 "coc.nvim config
 
