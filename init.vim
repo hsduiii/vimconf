@@ -16,6 +16,7 @@ Plug 'elixir-lang/vim-elixir' "elixir support
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'embark-theme/vim', { 'as': 'embark' }
 Plug 'sainnhe/gruvbox-material'
+Plug 'wadackel/vim-dogrun'
 
 call plug#end() 			"cerramos el llamado de los plugins
 
@@ -38,9 +39,9 @@ set clipboard=unnamed			"para poder utilizar el portapapeles del sistema operati
 "configuracion del tema
 set termguicolors 			"activa el true color en la terminal
 set background=dark
-colorscheme gruvbox-material
+let g:gruvbox_material_background = 'hard'
 let g:embark_terminal_italics = 1
-
+colorscheme gruvbox-material
 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 "configuracion de vim-airline
