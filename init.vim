@@ -19,6 +19,7 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'wadackel/vim-dogrun'
 Plug 'ap/vim-css-color'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 call plug#end() 			"cerramos el llamado de los plugins
 
