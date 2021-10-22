@@ -32,15 +32,16 @@ syntax on
 set encoding=utf-8 			"permite setear la codificación de archivos para aceptar caracteres especiales
 set sw=2 				"la indentación genera 4 espacios
 set nowrap				"el texto en una linea no baja a la siguiente, solo continua en la misma hasta el infinito.
-"set noswapfile				"para evitar el mensaje que sale al abrir algunos archivos sobre swap.
+set noswapfile				"para evitar el mensaje que sale al abrir algunos archivos sobre swap.
 set clipboard=unnamed			"para poder utilizar el portapapeles del sistema operativo 'esto permite poder copiar y pegar desde cualquier parte a nvim y viceversa.	
-
+set guifont=Fira\ Code\ iScript
 
 "configuracion del tema
 set termguicolors 			"activa el true color en la terminal
 set background=dark
 let g:gruvbox_material_background = 'hard'
-let g:embark_terminal_italics = 1
+let g:gruvbox_material_enable_bold = 1
+let g:gruvbox_material_enable_italic = 1
 colorscheme gruvbox-material
 "::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
