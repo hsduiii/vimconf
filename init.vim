@@ -199,6 +199,9 @@ endif
 command! -nargs=0 Format :call CocAction('format')
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
+" Add `:GoToDefinition` command to show var, func, import definition.
+command! -nargs=0 GoToDefinition :call CocActionAsync('jumpDefinition')
+
 " Add `:Fold` command to fold current buffer.
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
