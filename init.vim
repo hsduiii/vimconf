@@ -2,7 +2,7 @@
 
 "let g:python3_host_prog = 'C:\Users\hector.salinas\AppData\Local\Programs\Python\Python310\python.exe' "Path to python for youcompleteme
 
-call plug#begin('~/AppData/Local/nvim/plugged') 	"directorio donde se van a instalar los plugins
+call plug#begin('~/.config/nvim/plugged') 	"directorio donde se van a instalar los plugins
 
 "plugins
 Plug 'joshdick/onedark.vim' 		"tema
@@ -195,11 +195,6 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
   vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 endif
 
-" Use CTRL-S for selections ranges.
-" Requires 'textDocument/selectionRange' support of language server.
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
-
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
@@ -232,3 +227,4 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
