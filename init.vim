@@ -6,20 +6,21 @@ call plug#begin('~/.config/nvim/plugged') 	"directorio donde se van a instalar l
 
 "plugins
 Plug 'joshdick/onedark.vim' 		"tema
-Plug 'Yggdroot/indentLine' 		"indentacion
+Plug 'Yggdroot/indentLine' 		"Muestra una barra en la indentacion
 Plug 'vim-airline/vim-airline'		"diseño de la barra en la cual se muestran los modos, la linea, etc.
 Plug 'vim-airline/vim-airline-themes'	"temas para el vim-airline
 Plug 'preservim/nerdtree'		"gestor de archivos en forma de arbol.
 Plug 'jiangmiao/auto-pairs'		"autocompletado de llaves, corchetes, etc.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}	"autocompletado inteligente
 Plug 'elixir-lang/vim-elixir' "elixir support
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'embark-theme/vim', { 'as': 'embark' }
-Plug 'sainnhe/gruvbox-material'
-Plug 'wadackel/vim-dogrun'
-Plug 'ap/vim-css-color'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'drewtempelmeyer/palenight.vim' "tema
+Plug 'embark-theme/vim', { 'as': 'embark' } "tema
+Plug 'sainnhe/gruvbox-material' "theme
+Plug 'wadackel/vim-dogrun' "tema
+Plug 'ap/vim-css-color' "Preview de colores en css
+Plug 'ryanoasis/vim-devicons' "iconos de folders y archivos
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "Permite colorear el nerdtree
+Plug 'HerringtonDarkholme/yats.vim' "TSX Highlighting 
 
 call plug#end() 			"cerramos el llamado de los plugins
 
