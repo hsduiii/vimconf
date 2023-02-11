@@ -2,7 +2,7 @@
 
 "let g:python3_host_prog = 'C:\Users\hector.salinas\AppData\Local\Programs\Python\Python310\python.exe' "Path to python for youcompleteme
 
-call plug#begin('~/.config/vim/plugged') 	"directorio donde se van a instalar los plugins
+call plug#begin('~/.vim/plugged') 	"directorio donde se van a instalar los plugins
 
 "plugins
 Plug 'joshdick/onedark.vim' 		"tema
@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline-themes'	"temas para el vim-airline
 Plug 'preservim/nerdtree'		"gestor de archivos en forma de arbol.
 Plug 'jiangmiao/auto-pairs'		"autocompletado de llaves, corchetes, etc.
 Plug 'neoclide/coc.nvim', {'branch': 'release'}	"autocompletado inteligente
+Plug 'elixir-lsp/coc-elixir', {'do': 'yarn install && yarn prepack'} "elixir language server
 Plug 'elixir-lang/vim-elixir' "elixir support
 Plug 'drewtempelmeyer/palenight.vim' "tema
 Plug 'embark-theme/vim', { 'as': 'embark' } "tema
@@ -65,7 +66,7 @@ map <C-n> :NERDTreeToggle<CR>
 "coc.nvim config
 
 "Install dependecies
-let g:coc_global_extensions = ['coc-eslint', 'coc-tsserver', 'coc-elixir', 'coc-prettier']
+let g:coc_global_extensions = ['coc-eslint', 'coc-tsserver', 'coc-prettier']
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
