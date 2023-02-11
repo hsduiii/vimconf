@@ -60,7 +60,7 @@ let g:airline_theme='onedark'	"el tema de airline
 map <C-n> :NERDTreeToggle<CR>
 
 " Start NERDTree and put the cursor back in the other window.
-autocmd VimEnter * NERDTree | wincmd p
+" autocmd VimEnter * NERDTree | wincmd p
 
 "coc.nvim config
 
