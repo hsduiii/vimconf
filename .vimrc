@@ -2,7 +2,7 @@
 
 "let g:python3_host_prog = 'C:\Users\hector.salinas\AppData\Local\Programs\Python\Python310\python.exe' "Path to python for youcompleteme
 
-call plug#begin('~/.config/nvim/plugged') 	"directorio donde se van a instalar los plugins
+call plug#begin('~/.config/vim/plugged') 	"directorio donde se van a instalar los plugins
 
 "plugins
 Plug 'joshdick/onedark.vim' 		"tema
@@ -231,4 +231,5 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
 
