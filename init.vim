@@ -1,8 +1,6 @@
 ":::instalacion de plugins:::
 
-"let g:python3_host_prog = 'C:\Users\hector.salinas\AppData\Local\Programs\Python\Python310\python.exe' "Path to python for youcompleteme
-
-call plug#begin('~/.vim/plugged') 	"directorio donde se van a instalar los plugins
+call plug#begin('~/.config/nvim/plugged') 	"directorio donde se van a instalar los plugins
 
 "plugins
 Plug 'joshdick/onedark.vim' 		"tema
