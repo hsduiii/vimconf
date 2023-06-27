@@ -1,6 +1,6 @@
 ":::instalacion de plugins:::
 
-call plug#begin('~/.config/nvim/plugged') 	"directorio donde se van a instalar los plugins
+call plug#begin('~/.vim/plugged') 	"directorio donde se van a instalar los plugins
 
 "plugins
 Plug 'joshdick/onedark.vim' 		"tema
@@ -19,6 +19,7 @@ Plug 'ap/vim-css-color' "Preview de colores en css
 Plug 'ryanoasis/vim-devicons' "iconos de folders y archivos
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight' "Permite colorear el nerdtree
 Plug 'HerringtonDarkholme/yats.vim' "TSX Highlighting 
+
 
 call plug#end() 			"cerramos el llamado de los plugins
 
@@ -63,7 +64,7 @@ autocmd VimEnter * NERDTree | wincmd p
 "coc.nvim config
 
 "Install dependecies
-let g:coc_global_extensions = ['coc-eslint', 'coc-elixir', 'coc-tsserver', 'coc-prettier']
+let g:coc_global_extensions = ['coc-eslint', 'coc-elixir', 'coc-tsserver', 'coc-prettier', 'coc-rust-analyzer']
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
