@@ -11,6 +11,7 @@ Plug 'nvim-tree/nvim-tree.lua' " Left file explorer
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
 
 call plug#end() 			"cerramos el llamado de los plugins
 
@@ -43,7 +44,7 @@ nnoremap <C-p> <cmd>Telescope find_files<cr>
 " coc.nvim config -------------------------------------------------
 
 "Install dependecies
-let g:coc_global_extensions = ['coc-eslint', 'coc-elixir', 'coc-tsserver', 'coc-prettier', 'coc-rust-analyzer']
+let g:coc_global_extensions = ['coc-eslint', 'coc-elixir', 'coc-tsserver', 'coc-prettier', 'coc-rust-analyzer', 'coc-go']
 
 " Add (Neo)Vim's native statusline support
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
@@ -84,11 +85,16 @@ vim.g.loaded_netrwPlugin = 1
 -- empty setup using defaults
 require("nvim-tree").setup()
 
+require('lspconfig').vls.setup{}
+
 require'lualine'.setup {
   options = {
     theme = 'codedark'
   }
 }
+
+vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
+
 END
 
 
