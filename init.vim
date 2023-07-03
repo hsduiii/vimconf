@@ -81,6 +81,9 @@ command! -nargs=0 GoToDefinition :call CocActionAsync('jumpDefinition')
 
 " coc.nvim config end -----------------------------------------------
 
+" Identation
+set noexpandtab    " Use tabs instead of spaces
+
 lua << END
 
 -- disable netrw at the very start of your init.lua
