@@ -82,8 +82,10 @@ command! -nargs=0 GoToDefinition :call CocActionAsync('jumpDefinition')
 " coc.nvim config end -----------------------------------------------
 
 " Identation
+set tabstop=2      " Number of spaces that a <Tab> counts for
+set softtabstop=2  " Number of spaces to use when editing text (indentation)
+set shiftwidth=2   " Number of spaces used for each step of (auto)indent
 set noexpandtab    " Use tabs instead of spaces
-
 lua << END
 
 -- disable netrw at the very start of your init.lua
