@@ -16,7 +16,7 @@ Plug 'neovim/nvim-lspconfig'
 call plug#end() 			"cerramos el llamado de los plugins
 
 " Auto open CHADTree
-autocmd VimEnter * NvimTreeOpen
+autocmd VimEnter * NvimTreeOpen | wincmd p 
 
 " Enable gruvbox material theme
 
