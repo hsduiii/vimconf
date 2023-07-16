@@ -12,6 +12,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
+Plug 'elixir-editors/vim-elixir'
 
 call plug#end() 			"cerramos el llamado de los plugins
 
@@ -86,6 +87,10 @@ set tabstop=2      " Number of spaces that a <Tab> counts for
 set softtabstop=2  " Number of spaces to use when editing text (indentation)
 set shiftwidth=2   " Number of spaces used for each step of (auto)indent
 set noexpandtab    " Use tabs instead of spaces
+
+" Enable syntax highlighting
+syntax on
+
 lua << END
 
 -- disable netrw at the very start of your init.lua
