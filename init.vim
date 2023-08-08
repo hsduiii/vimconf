@@ -13,10 +13,6 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'elixir-editors/vim-elixir'
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh'
-    \ } " Haskell
 
 call plug#end() 			"cerramos el llamado de los plugins
 
@@ -104,15 +100,13 @@ vim.g.loaded_netrwPlugin = 1
 -- empty setup using defaults
 require("nvim-tree").setup()
 
-require('lspconfig').vls.setup{}
-
 require'lualine'.setup {
   options = {
     theme = 'codedark'
   }
 }
 
-vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
+-- vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
 
 END
 
