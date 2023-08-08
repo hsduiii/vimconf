@@ -13,6 +13,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'elixir-editors/vim-elixir'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 call plug#end() 			"cerramos el llamado de los plugins
 
@@ -37,7 +38,7 @@ let g:gruvbox_material_background = 'medium'
 " For better performance
 let g:gruvbox_material_better_performance = 1
 
-colorscheme gruvbox-material
+colorscheme catppuccin-frappe " catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 
 " Telescope
 nnoremap <C-p> <cmd>Telescope find_files<cr>
