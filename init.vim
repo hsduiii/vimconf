@@ -112,7 +112,24 @@ require'lualine'.setup {
   }
 }
 
--- vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
+-- V
+
+override_by_extension = {
+	["v"] = {
+    icon = "",
+    color = "#5d87bf",
+    cterm_color = "67",
+    name = "Vlang",
+  },
+	["vsh"] = {
+    icon = "",
+    color = "#5d87bf",
+    cterm_color = "67",
+    name = "Vlang",
+  }
+};
+
+vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
 
 END
 
