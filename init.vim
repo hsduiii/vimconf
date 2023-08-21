@@ -14,6 +14,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'elixir-editors/vim-elixir'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'ollykel/v-vim'
 
 call plug#end() 			"cerramos el llamado de los plugins
 
