@@ -113,8 +113,7 @@ require'lualine'.setup {
 }
 
 -- V
-
-override_by_extension = {
+require("nvim-web-devicons").set_icon {
 	["v"] = {
     icon = "",
     color = "#5d87bf",
