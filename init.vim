@@ -14,7 +14,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'neovim/nvim-lspconfig'
 Plug 'elixir-editors/vim-elixir'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
-Plug 'ollykel/v-vim'
 
 call plug#end() 			"cerramos el llamado de los plugins
 
@@ -112,26 +111,6 @@ require'lualine'.setup {
     theme = 'codedark'
   }
 }
-
--- V
-require("nvim-web-devicons").set_icon {
-	["v"] = {
-    icon = "",
-    color = "#5d87bf",
-    cterm_color = "67",
-    name = "Vlang",
-  },
-	["vsh"] = {
-    icon = "",
-    color = "#5d87bf",
-    cterm_color = "67",
-    name = "Vlang",
-  }
-};
-
-require('lspconfig').vls.setup{}
-
-vim.cmd([[au BufNewFile,BufRead *.v set filetype=vlang]])
 
 END
 
