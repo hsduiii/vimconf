@@ -1,11 +1,20 @@
 ---@type ChadrcConfig
 local M = {}
 
-M.ui = { theme = 'onedark' }
+-- Path to overriding theme and highlights files
+local highlights = require "custom.highlights"
 
--- lazy.nvim plugins
+M.ui = {
+  theme = "onedark",
+  theme_toggle = { "onedark", "one_light" },
+
+  hl_override = highlights.override,
+  hl_add = highlights.add,
+}
+
 M.plugins = "custom.plugins"
 
+-- check core.mappings for table structure
 M.mappings = require "custom.mappings"
 
 return M
