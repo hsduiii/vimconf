@@ -12,6 +12,10 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "elixir",
+    "erlang",
+    "heex",
+    "eex",
   },
   indent = {
     enable = true,
